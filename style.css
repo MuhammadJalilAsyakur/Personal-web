@@ -12,13 +12,14 @@ body {
 
 
 /* styling for header */
+
 .navbar {
     height: 100px;
     width: 100%;
-    padding: 40px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 30px;
 }
 
 
@@ -34,7 +35,7 @@ body {
 .navbar-menu li,
 .navbar-menu a {
     list-style: none;
-    color: #032e6f;
+    color: #03a9fa;
     font-weight: 600;
     font-size: 1.2em;
     transition: 0.5s;
@@ -42,25 +43,24 @@ body {
 
 .navbar-menu li:hover {
     font-weight: bold;
-    color: #03a9fa;
+    color: #032e6f;
     transform: translateY(-5px);
 }
 
 
 .logo-wrapper {
-    display: flex;
-    flex-direction: row;
+    padding-bottom: 34px;
 }
+
 
 .logo {
     transition: 1s;
-    animation: bounce 4s ease-in-out infinite;
 }
 
 .logo h1 {
     position: absolute;
     font-size: 2em;
-    font-weight: 900;
+    font-weight: bolder;
     transition: 0.5s;
 }
 
@@ -75,19 +75,19 @@ body {
 }
 
 
-@keyframes bounce {
+/* @keyframes bounce {
     0% {
-        transform: translateY(0);
+        transform: translateY(50px);
     }
 
     50% {
-        transform: translateY(-100px);
+        transform: translateY(-50px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(50px);
     }
-}
+} */
 
 
 @keyframes water {
