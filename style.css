@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 .footer-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -149,8 +152,23 @@ footer .wave#wave4 {
 }
 
 
+@media only screen and (max-width: 768px) {
+    .footer-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
 
+    .footer-menu {
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
+    p {
+        font-size: 12px;
+    }
+
+}
 
 
 
