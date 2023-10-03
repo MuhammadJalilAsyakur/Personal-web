@@ -128,58 +128,50 @@ body {
 
 main {
     margin: 50px;
-    align-items: center;
 }
+
 
 main .title {
-    text-align: center;
-    color: #013651;
-}
-
-main .icon-card {
     display: flex;
-    font-size: 2em;
-    margin-top: 40%;
-}
-
-main .logo-js {
-    color: #ffff00;
-}
-
-main .logo-html {
-    color: #e34f26;
-}
-
-main .logo-css {
-    color: #2965f1;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    color: #013651;
 }
 
 .card-wrapper {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
     margin: 30px;
+    justify-content: center;
 }
 
-main .card {
+.card {
     width: 200px;
     height: 200px;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
     transition: 0.5s;
+    background-color: #025c89;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: #025c89;
+    justify-content: space-between;
 }
 
 
-main a {
+
+.icon-card {
+    display: flex;
+    font-size: 2em;
+    align-items: flex-end;
+}
+
+
+main .card-wrapper a {
     text-decoration: none;
 }
+
 
 main .card-title {
     color: #e4600d;
@@ -195,13 +187,24 @@ main .card:hover {
     cursor: pointer;
 }
 
+.logo-js {
+    color: #ffff00;
+}
+
+.logo-html {
+    color: #e34f26;
+}
+
+.logo-css {
+    color: #2965f1;
+}
 
 /* styling for footer */
 .footer-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: rgb(255, 255, 255);
 }
 
