@@ -125,67 +125,31 @@ body {
 }
 
 
-.hero-section {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 100px;
-    justify-content: space-between;
-    gap: 15%;
-    align-items: center;
-}
 
 
-.hero-section img {
-    height: 500px;
-    width: 500px;
-    width: auto;
-    animation: bounce 2s ease-in-out infinite;
-}
-
-.hero-caption {
+main {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    font-weight: bold;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
 
-.hero-caption h2 {
-    color: #FFBF00;
-    font-size: 24px;
-}
-
-.hero-caption h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #f201ff;
-}
-
-
-.hero-caption span {
-    font-weight: bold;
-    color: #004b71;
-}
-
-.hero-caption p {
-    color: #e4600d;
-}
-
-.hero-caption button {
-    padding: 10px 20px;
+main .card {
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
-    border: none;
-    background-color: #00d9ff;
-    font-weight: bolder;
-    font-size: 20px;
-    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     transition: 0.5s;
-    box-shadow: 0 0 10px #00d9ff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-caption button a {
-    text-decoration: none;
-    list-style: none;
-    color: #004b71;
+main .card-img-top {
+    height: 50%;
+    display: flex;
 }
 
 /* styling for footer */
@@ -193,7 +157,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 50vh;
+    min-height: 100vh;
     background-color: rgb(255, 255, 255);
 }
 
@@ -350,54 +314,6 @@ footer .wave#wave4 {
 
     .navbar-menu a {
         color: #e4600d;
-    }
-
-    .hero-section {
-        justify-content: center;
-        flex-direction: column;
-        padding: 50px;
-        gap: 50px;
-    }
-
-    .hero-section img {
-        height: 300px;
-    }
-
-    .hero-caption {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        font-weight: bold;
-    }
-
-    .hero-caption h2 {
-        margin-inline: -50px;
-        display: flex;
-        font-size: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-caption h1 {
-        margin-inline: -50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 18px;
-    }
-
-    .hero-caption P {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 14px;
-    }
-
-    .hero-caption button {
-        width: 60%;
-        align-self: center;
-        font-size: 12px;
     }
 
     .footer-wrapper {

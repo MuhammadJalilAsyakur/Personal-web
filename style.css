@@ -52,21 +52,6 @@ body {
     cursor: pointer;
 }
 
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    transition: 3s;
-}
-
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 1s;
-}
-
 .logo-wrapper {
     padding-bottom: 34px;
 }
@@ -172,7 +157,7 @@ body {
 
 .hero-caption h1 {
     font-family: 'Poppins', sans-serif;
-    color: #e60859;
+    color: #f201ff;
 }
 
 
@@ -265,7 +250,7 @@ footer p {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 1em;
     color: #ffff00;
 }
 
@@ -354,28 +339,17 @@ footer .wave#wave4 {
 
 
     .navbar-menu {
-        display: none;
         flex-direction: column;
         gap: 5px;
         font-size: 9px;
         align-items: flex-end;
         position: absolute;
         top: 40px;
-        left: 75%;
+        left: 80%;
     }
 
-    .navbar-menu.show {
-        display: flex;
-    }
-
-    .navbar-menu li a {
-        margin: 0;
-        text-align: right;
+    .navbar-menu a {
         color: #e4600d;
-    }
-
-    .hamburger-menu {
-        display: flex;
     }
 
     .hero-section {
