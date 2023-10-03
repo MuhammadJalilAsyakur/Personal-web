@@ -231,12 +231,12 @@ footer .social-icon {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
-    cursor: pointer;
     gap: 40px;
 }
 
 footer .social-icon li {
     list-style: none;
+    cursor: pointer;
 }
 
 footer .social-icon #iconOdd {
@@ -264,7 +264,8 @@ footer p {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 1.1em;
+    font-size: 2em;
+    color: #ffff00;
 }
 
 footer .wave {
