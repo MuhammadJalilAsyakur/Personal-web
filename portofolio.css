@@ -126,31 +126,75 @@ body {
 
 
 
-
 main {
+    margin: 50px;
+    align-items: center;
+}
+
+main .title {
+    text-align: center;
+    color: #013651;
+}
+
+main .icon-card {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin-top: 40%;
+}
+
+main .logo-js {
+    color: #ffff00;
+}
+
+main .logo-html {
+    color: #e34f26;
+}
+
+main .logo-css {
+    color: #2965f1;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
 }
 
 main .card {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
+    padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     transition: 0.5s;
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: #025c89;
 }
 
-main .card-img-top {
-    height: 50%;
-    display: flex;
+
+main a {
+    text-decoration: none;
 }
+
+main .card-title {
+    color: #e4600d;
+}
+
+main .card-text {
+    font-size: 16px;
+    color: #fff;
+}
+
+main .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 /* styling for footer */
 .footer-wrapper {
@@ -330,6 +374,13 @@ footer .wave#wave4 {
     footer p {
         font-size: 12px;
         color: #ffff00;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .card-wrapper {
+        flex-direction: column;
     }
 
 }
