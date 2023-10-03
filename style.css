@@ -255,7 +255,7 @@ footer .social-icon li a {
     transition: 0.5s;
 }
 
-footer .social-icon li a:hover {
+footer .social-icon a:hover {
     color: #ffff00;
 }
 
