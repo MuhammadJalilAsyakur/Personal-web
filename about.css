@@ -124,93 +124,120 @@ body {
     }
 }
 
-
-
 main {
-    margin: 50px;
+    margin: 100px;
+    background-color: rgb(255, 255, 255);
 }
 
-
-.card-project .title,
-.card-skill .title {
+section {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    color: #013651;
-}
-
-.card-project,
-.card-skill {
-    display: flex;
-    gap: 20px;
     flex-direction: column;
-    justify-content: center;
+    gap: 50px;
 }
 
-.card-wrapper {
+section .about-me {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20%;
 }
 
+section .reason {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20%;
+}
 
-.card {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+section .skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 34%;
+}
+
+section .caption {
+    border: 1px solid #e4600d;
+    padding: 20px;
     transition: 0.5s;
-    background-color: #025c89;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+section .caption:hover {
+    transform: translate3d(5px, -10px, 0);
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #e4600d;
+}
+
+section .title {
+    color: #e4600d;
+}
+
+section .text {
+    color: #004b71;
+    line-height: 1.5em;
+}
+
+.about-me img {
+    margin-top: -15px;
+    margin-right: 100px;
+    animation: bounce2 2s ease-in-out infinite;
+}
+
+.reason img {
+    margin-top: -15px;
+    margin-left: 100px;
+    animation: circle 3s ease-in-out infinite;
 }
 
 
 
 .icon-card {
+    font-size: 3em;
     display: flex;
-    font-size: 2em;
-    align-items: flex-end;
+    align-items: center;
 }
 
-
-main .card-wrapper a {
-    text-decoration: none;
-}
-
-
-main .card-title {
-    color: #e4600d;
-}
-
-main .card-text {
-    font-size: 16px;
-    color: #fff;
-}
-
-main .card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 .logo-js {
     color: #ffff00;
+    animation: circle 3s ease-in-out infinite;
 }
 
 .logo-html {
     color: #e34f26;
+    animation: bounce 2s ease-in-out infinite;
 }
 
 .logo-css {
     color: #2965f1;
+    animation: circle2 3s ease-in-out infinite;
 }
 
-.card-skill {
-    margin-top: 50px;
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-40px) rotate(-360deg);
+    }
 }
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg) translate(40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(40px) rotate(-360deg);
+    }
+}
+
 
 /* styling for footer */
 .footer-wrapper {
@@ -374,6 +401,32 @@ footer .wave#wave4 {
         margin-top: -20px;
     }
 
+    main {
+        margin-inline: 20px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    section {
+        margin-left: -12px;
+        font-size: 14px;
+    }
+
+    .about-me .caption {
+        width: 100%;
+    }
+
+    section img {
+        display: none;
+    }
+
+    .icon-card {
+        display: none;
+    }
+
+
     .navbar-menu a {
         color: #e4600d;
         font-weight: bold;
@@ -393,20 +446,6 @@ footer .wave#wave4 {
     footer p {
         font-size: 12px;
         color: #ffff00;
-    }
-
-}
-
-@media only screen and (max-width: 425px) {
-
-    .card-project {
-        margin-top: 70px;
-    }
-
-    .card-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
 }
