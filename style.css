@@ -156,15 +156,9 @@ body {
 }
 
 .hero-caption h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #f201ff;
-}
-
-
-.hero-caption span {
-    font-weight: bold;
     color: #004b71;
 }
+
 
 .hero-caption p {
     color: #e4600d;
@@ -350,6 +344,7 @@ footer .wave#wave4 {
 
     .navbar-menu a {
         color: #e4600d;
+        font-weight: bold;
     }
 
     .hero-section {
