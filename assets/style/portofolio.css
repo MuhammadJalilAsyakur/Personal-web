@@ -365,6 +365,10 @@ footer .wave#wave4 {
 }
 
 
+
+
+/* 
+media query for mobile devices */
 @media only screen and (max-width: 768px) {
 
     * {
