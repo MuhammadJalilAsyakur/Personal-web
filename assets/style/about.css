@@ -91,6 +91,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    animation: fade-up 3s ease-in-out;
 }
 
 
