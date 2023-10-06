@@ -42,7 +42,7 @@ body {
     font-size: 1.2em;
     transition: 0.5s;
     cursor: pointer;
-    animation: fade-down 4s ease-in-out;
+    animation: fade-down 3s ease-in-out;
 }
 
 .navbar-menu li:hover,

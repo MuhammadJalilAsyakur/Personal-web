@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    animation: fade-up 2s ease-in-out;
 }
 
 
@@ -43,6 +42,7 @@ body {
     font-size: 1.2em;
     transition: 0.5s;
     cursor: pointer;
+    animation: fade-down 3s ease-in-out;
 }
 
 .navbar-menu li:hover,
@@ -80,51 +80,8 @@ body {
 }
 
 
-@keyframes bounce {
-    0% {
-        transform: translateY(10px);
-    }
 
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(10px);
-    }
-}
-
-@keyframes bounce2 {
-    0% {
-        transform: translateY(-10px);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-
-
-@keyframes water {
-
-    0%,
-    100% {
-        clip-path: polygon(0 45%, 15% 44%, 32% 50%,
-                54% 60%, 70% 61%, 84% 59%, 100% 52%,
-                100% 100%, 0 100%);
-    }
-
-    50% {
-        clip-path: polygon(0 60%, 16% 65%, 34% 66%,
-                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
-    }
-}
-
+/* styling for main content */
 main {
     margin: 100px;
     background-color: rgb(255, 255, 255);
@@ -136,18 +93,6 @@ section {
     gap: 50px;
 }
 
-
-@keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 section .about-me {
     display: flex;
@@ -230,28 +175,6 @@ section .text {
 .logo-css {
     color: #2965f1;
     animation: circle2 3s ease-in-out infinite;
-}
-
-@keyframes circle {
-    0% {
-        transform: rotate(0deg) translate(-40px) rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(360deg) translate(-40px) rotate(-360deg);
-    }
-}
-
-@keyframes circle2 {
-    0% {
-        transform: rotate(0deg) translate(40px) rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(360deg) translate(40px) rotate(-360deg);
-    }
 }
 
 
@@ -362,6 +285,90 @@ footer .wave#wave4 {
 }
 
 
+
+/* keyframe animation */
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+@keyframes water {
+
+    0%,
+    100% {
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%,
+                54% 60%, 70% 61%, 84% 59%, 100% 52%,
+                100% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%,
+                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-40px) rotate(-360deg);
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg) translate(40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(40px) rotate(-360deg);
+    }
+}
+
+
 @keyframes animateWave {
     0% {
         background-position-x: 0px;
@@ -391,6 +398,9 @@ footer .wave#wave4 {
 }
 
 
+
+
+/* media query for responsive design */
 @media only screen and (max-width: 768px) {
 
     * {
