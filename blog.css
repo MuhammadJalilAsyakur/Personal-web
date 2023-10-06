@@ -88,12 +88,11 @@ styling for main */
     align-items: center;
 }
 
-.card-blog .title {
-    text-align: center;
-}
 
 .card-blog .title .icon-title {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-blog .title .icon-title i {
@@ -101,9 +100,52 @@ styling for main */
     margin-top: 8px;
 }
 
-.card img {
-    height: 9em;
+
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.card {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-block: 15px;
+    padding-inline: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    background-color: #025c89;
+}
+
+
+
+.card img {
+    height: 10em;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #fff;
+    list-style: none;
+}
+
+.card-caption .card-text {
+    text-align: left;
+}
+
+
 
 
 /* styling for footer */
@@ -357,28 +399,12 @@ footer .wave#wave4 {
     }
 
     main {
-        margin-inline: 20px;
+        margin-top: 60px;
     }
 
-    .about-me {
-        width: 100%;
-    }
 
-    section {
-        margin-left: -12px;
-        font-size: 14px;
-    }
-
-    .about-me .caption {
-        width: 100%;
-    }
-
-    section img {
-        display: none;
-    }
-
-    .icon-card {
-        display: none;
+    .card-wrapper {
+        flex-direction: column;
     }
 
 
