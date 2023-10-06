@@ -80,51 +80,8 @@ body {
 }
 
 
-@keyframes bounce {
-    0% {
-        transform: translateY(10px);
-    }
 
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(10px);
-    }
-}
-
-@keyframes bounce2 {
-    0% {
-        transform: translateY(-10px);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-
-
-@keyframes water {
-
-    0%,
-    100% {
-        clip-path: polygon(0 45%, 15% 44%, 32% 50%,
-                54% 60%, 70% 61%, 84% 59%, 100% 52%,
-                100% 100%, 0 100%);
-    }
-
-    50% {
-        clip-path: polygon(0 60%, 16% 65%, 34% 66%,
-                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
-    }
-}
-
+/* styling for hero section  */
 
 .hero-section {
     display: flex;
@@ -134,30 +91,6 @@ body {
     gap: 15%;
     align-items: center;
     animation: fade-up 3s ease-in-out;
-}
-
-@keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes fade-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 .hero-section img {
@@ -314,6 +247,80 @@ footer .wave#wave4 {
 }
 
 
+
+
+/* keyframe animation */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+@keyframes water {
+
+    0%,
+    100% {
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%,
+                54% 60%, 70% 61%, 84% 59%, 100% 52%,
+                100% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%,
+                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
+    }
+}
+
+
 @keyframes animateWave {
     0% {
         background-position-x: 0px;
@@ -343,6 +350,10 @@ footer .wave#wave4 {
 }
 
 
+
+
+
+/* media query for mobile devices  */
 
 @media only screen and (max-width: 768px) {
 
