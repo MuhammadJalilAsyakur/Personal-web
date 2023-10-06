@@ -156,7 +156,7 @@ section .skill {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    gap: 34%;
+    gap: 25%;
 }
 
 section .caption {
@@ -196,6 +196,8 @@ section .text {
 
 .icon-card {
     font-size: 3em;
+    margin-top: -15px;
+    margin-left: 100px;
     display: flex;
     align-items: center;
 }
