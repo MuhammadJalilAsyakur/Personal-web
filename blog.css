@@ -79,6 +79,31 @@ body {
     animation: water 4s ease-in-out infinite;
 }
 
+/* 
+styling for main */
+.card-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-blog .title {
+    text-align: center;
+}
+
+.card-blog .title .icon-title {
+    display: flex;
+}
+
+.card-blog .title .icon-title i {
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+.card img {
+    height: 9em;
+}
 
 
 /* styling for footer */
