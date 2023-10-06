@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Poppins:wght@200;400;500;700&family=Raleway:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* styling for header */
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+    border-radius: 0 0 30px 30px;
+}
+
+
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+.navbar-menu li,
+.navbar-menu a {
+    text-decoration: none;
+    list-style: none;
+    color: #00d9ff;
+    font-size: 1.2em;
+    transition: 0.5s;
+    cursor: pointer;
+    animation: fade-down 3s ease-in-out;
+}
+
+.navbar-menu li:hover,
+.navbar-menu a:hover {
+    font-weight: bold;
+    color: #e4600d;
+    transform: translate3d(5px, -10px, 0);
+    cursor: pointer;
+}
+
+.logo-wrapper {
+    padding-bottom: 34px;
+}
+
+
+.logo {
+    transition: 1s;
+}
+
+.logo h1 {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.logo h1:nth-child(1) {
+    color: #ffafcc;
+    -webkit-text-stroke: 1px #004b71;
+}
+
+.logo h1:nth-child(2) {
+    color: #e4600d;
+    animation: water 4s ease-in-out infinite;
+}
+
+
+
+/* styling for footer */
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+footer .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer .social-icon li {
+    list-style: none;
+    cursor: pointer;
+}
+
+footer .social-icon #iconOdd {
+    animation: bounce 4s ease-in-out infinite;
+}
+
+
+footer .social-icon #iconEven {
+    animation: bounce2 4s ease-in-out infinite;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    transition: 0.5s;
+}
+
+footer .social-icon a:hover {
+    color: #ffff00;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #ffff00;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png) repeat-x;
+    background-size: 1000px 100px;
+}
+
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave2 3s linear infinite;
+}
+
+
+
+/* keyframe animation */
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+@keyframes water {
+
+    0%,
+    100% {
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%,
+                54% 60%, 70% 61%, 84% 59%, 100% 52%,
+                100% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%,
+                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-40px) rotate(-360deg);
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg) translate(40px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(40px) rotate(-360deg);
+    }
+}
+
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    50% {
+        background-position-x: 500px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    50% {
+        background-position-x: 500px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+
+
+
+/* media query for responsive design */
+@media only screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin-top: -20px;
+    }
+
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 9px;
+        align-items: flex-end;
+        position: absolute;
+        top: 40px;
+        left: 80%;
+        margin-top: -20px;
+    }
+
+    main {
+        margin-inline: 20px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    section {
+        margin-left: -12px;
+        font-size: 14px;
+    }
+
+    .about-me .caption {
+        width: 100%;
+    }
+
+    section img {
+        display: none;
+    }
+
+    .icon-card {
+        display: none;
+    }
+
+
+    .navbar-menu a {
+        color: #e4600d;
+        font-weight: bold;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-menu {
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-size: 12px;
+        color: #ffff00;
+    }
+
+}
