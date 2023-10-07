@@ -86,6 +86,7 @@ styling for main */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #e4600d;
 }
 
 
@@ -145,6 +146,11 @@ styling for main */
     list-style: none;
 }
 
+
+.card-caption .card-title {
+    color: #ffff00;
+
+}
 
 
 /* styling for footer */
