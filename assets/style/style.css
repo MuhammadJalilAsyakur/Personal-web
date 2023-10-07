@@ -451,3 +451,16 @@ footer .wave#wave4 {
     }
 
 }
+
+@media only screen and (max-width: 425px) {
+
+    .hero-caption p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+
+    .hero-caption button {
+        margin-top: 10px;
+    }
+}
