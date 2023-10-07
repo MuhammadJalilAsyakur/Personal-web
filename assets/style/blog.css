@@ -110,6 +110,10 @@ styling for main */
     gap: 20px;
 }
 
+.card-wrapper a {
+    text-decoration: none;
+}
+
 .card {
     height: 300px;
     width: 300px;
@@ -134,17 +138,12 @@ styling for main */
 .card-caption {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-top: 10px;
     font-size: 10px;
     color: #fff;
     list-style: none;
 }
-
-.card-caption .card-text {
-    text-align: left;
-}
-
 
 
 
