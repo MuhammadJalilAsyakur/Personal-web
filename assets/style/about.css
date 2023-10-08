@@ -144,6 +144,12 @@ section .text {
     margin-top: -15px;
     margin-right: 100px;
     animation: bounce2 2s ease-in-out infinite;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.about-me img:hover {
+    filter: drop-shadow(10px 10px 10px #e4600d);
 }
 
 .reason img {
